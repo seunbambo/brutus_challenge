@@ -33,13 +33,13 @@
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-                                <p id="passwordHelpBlock" class="form-text text-muted">
-                                    Your password must be more than 16 characters long, should contain at-least 1 Uppercase, 1 Lowercase, 1 Numeric and 1 special character.
-                            </p>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
-                                    </span>
+                                            <p id="passwordHelpBlock" class="form-text text-muted">
+                                                    Your password must be more than 16 characters long, should contain at-least 1 Uppercase, 1 Lowercase, 1 Numeric and 1 special character.
+                                            </p>
+                                        </span>
                                 @enderror
                             </div>
                         </div>
